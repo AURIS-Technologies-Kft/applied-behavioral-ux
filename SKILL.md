@@ -9,7 +9,9 @@ A research-grounded framework for evaluating and designing user experiences. Unl
 
 ## How to Use This Skill
 
-**For evaluation/critique:** Read the task (screenshot, description, code, or flow), then walk through each layer top-to-bottom. For each layer, identify what's working and what violates the principle. End with prioritized recommendations.
+**For evaluation/critique:** If the user provides a URL, browse the live product directly using an agent browser (if available) rather than relying on code or screenshots alone. Observe the actual interface, interactions, and flow as a real user would. Then walk through each layer top-to-bottom. For each layer, identify what's working and what violates the principle. End with prioritized recommendations.
+
+If the user provides a screenshot, description, code, or flow (and no URL or browser is available), walk through each layer using the provided materials.
 
 **For design/creation:** Walk through each layer bottom-up (Layer 5 → Layer 1) to ground design decisions in behavioral outcomes first, then work back to visual execution.
 
@@ -17,6 +19,21 @@ A research-grounded framework for evaluating and designing user experiences. Unl
 
 ## Framework Overview
 
+```
+Layer 1 — Perception (How users SEE)
+  Gestalt · Yarbus · Fitts · Visual Hierarchy · Attention · Emotional Design · Processing Fluency
+       ↓
+Layer 2 — Cognition (How users THINK)
+  Cognitive Load · Miller · Mental Models · Hick · Information Foraging · Zeigarnik · Flow
+       ↓
+Layer 3 — Decision Making (How users CHOOSE)
+  Prospect Theory · Loss Aversion · Nudge · Choice Architecture · Cialdini · Hyperbolic Discounting
+       ↓
+Layer 4 — Motivation (Why users ACT)
+  Self-Determination Theory · Goal Theory · Habit Formation · Peak-End Rule · Social Identity
+       ↓
+Layer 5 — Product Behavior (What the product DOES)
+  Activation · Onboarding · Retention · Conversion · Trust · Pricing
 ```
 
 ## Mobile Considerations (Cross-Layer)
@@ -485,7 +502,7 @@ The moment a user first experiences the product's core value — this must happe
 
 ## Evaluation Template
 
-When evaluating a product/feature/flow, produce output in this structure:
+When evaluating a product/feature/flow, browse the live interface if a URL is available (using an agent browser). Observe the actual experience as a user would — navigation, interactions, responsive behavior, loading states, and flow completion. Then produce output in this structure:
 
 ```
 ## Layer 1 — Perception

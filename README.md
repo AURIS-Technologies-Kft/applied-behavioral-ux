@@ -25,6 +25,16 @@ Layer 5 — Product Behavior (What the product DOES)
   Activation · Onboarding · Retention · Conversion · Trust · Pricing
 ```
 
+### Mobile Considerations
+
+Mobile is not just "smaller desktop" — several behavioral dynamics are genuinely unique to mobile devices. The framework includes cross-layer mobile principles based on research:
+
+- **Thumb Zone Reachability** — 49% one-handed / 36% cradle / 15% two-handed (Hoober, 2013; n=1,333)
+- **Divided Attention as Baseline** — mobile use frequently occurs while walking, in transit, or multitasking
+- **Screen Size as Natural Progressive Disclosure** — smaller screens can produce lower cognitive load (Al-Mushasha et al., 2021; n=1,570)
+- **Smartphone "Brain Drain"** — the mere presence of a phone reduces cognitive capacity (Ward et al., 2017)
+- **Lower Abandonment Cost** — alternative apps are one tap away
+
 ## What's Inside
 
 | File | Description |
@@ -34,15 +44,16 @@ Layer 5 — Product Behavior (What the product DOES)
 
 ### Reference Files
 
-- [`references/layer-1-perception.md`](references/layer-1-perception.md) — Visual processing, eye tracking, attention, emotional design, processing fluency, aesthetic-usability effect
-- [`references/layer-2-cognition.md`](references/layer-2-cognition.md) — Cognitive load, memory, mental models, information foraging, mere exposure, Zeigarnik effect, flow state
-- [`references/layer-3-decisions.md`](references/layer-3-decisions.md) — Prospect theory, choice architecture, Cialdini's influence principles, endowment effect, regulatory focus, construal level theory
-- [`references/layer-4-motivation.md`](references/layer-4-motivation.md) — Self-determination theory, goal-gradient hypothesis, habit formation, Fogg behavior model, peak-end rule, expectancy-value theory, social identity
+- [`references/layer-1-perception.md`](references/layer-1-perception.md) — Visual processing, eye tracking, attention, emotional design, processing fluency, aesthetic-usability effect, color psychology
+- [`references/layer-2-cognition.md`](references/layer-2-cognition.md) — Cognitive load, memory, mental models, information foraging, mere exposure, Zeigarnik effect, flow state, serial position effect, multimedia learning
+- [`references/layer-3-decisions.md`](references/layer-3-decisions.md) — Prospect theory, choice architecture, Cialdini's influence principles, endowment effect, status quo bias, regulatory focus, construal level theory, hyperbolic discounting, mental accounting, zero price effect, affective forecasting
+- [`references/layer-4-motivation.md`](references/layer-4-motivation.md) — Self-determination theory, goal-gradient hypothesis, habit formation, Fogg behavior model, peak-end rule, expectancy-value theory, social identity, goal setting theory
 - [`references/layer-5-product.md`](references/layer-5-product.md) — Activation, onboarding, retention, conversion, trust, pricing psychology
+- [`references/mobile-ux-research.md`](references/mobile-ux-research.md) — 17 mobile-specific research entries across all layers, with honest classification of mobile-unique vs. applied principles
 
 ## Foundational Research
 
-This framework synthesizes findings from 40+ peer-reviewed papers and seminal works across:
+This framework synthesizes findings from 50+ peer-reviewed papers and seminal works across:
 
 **Psychology & Neuroscience**
 - Kahneman & Tversky (1979) — Prospect Theory
@@ -50,35 +61,54 @@ This framework synthesizes findings from 40+ peer-reviewed papers and seminal wo
 - Csikszentmihalyi (1975) — Flow Theory
 - Reber, Winkielman & Schwarz (1998/2004) — Processing Fluency
 - Zeigarnik (1927) — Incomplete Task Retention
+- Zajonc (1968) — Mere Exposure Effect
+- Kurosu & Kashimura (1995) — Aesthetic-Usability Effect
 
 **Behavioral Economics**
-- Thaler (1980/1991) — Endowment Effect & Loss Aversion
+- Thaler (1980/1985/1991) — Endowment Effect, Mental Accounting & Loss Aversion
 - Ainslie (1975) — Hyperbolic Discounting
 - Kahneman & Tversky (1984) — Framing Effects
 - Samuelson & Zeckhauser (1988) — Status Quo Bias
+- Shampanier, Mazar & Ariely (2007) — Zero Price Effect
+- Wilson & Gilbert (2003) — Affective Forecasting Errors
 
 **Motivation & Social Psychology**
 - Deci & Ryan (1985) — Self-Determination Theory
 - Tajfel & Turner (1979) — Social Identity Theory
 - Cialdini (1984) — Principles of Influence
 - Locke & Latham (1990) — Goal Setting Theory
+- Kahneman et al. (1993) — Peak-End Rule
+- Eccles & Wigfield (2000) — Expectancy-Value Theory
 
 **Perception & Attention**
 - Fitts (1954) — Law of Target Acquisition
 - Yarbus (1967) — Task-Driven Eye Movements
-- Kurosu & Kashimura (1995) — Aesthetic-Usability Effect
 - Treisman & Gelade (1980) — Feature Integration Theory
+- Elliot & Maier (2014) — Color Psychology
+
+**Decision Architecture**
+- Higgins (1997) — Regulatory Focus Theory
+- Trope & Liberman (2010) — Construal Level Theory
+
+**Mobile-Specific Research**
+- Hoober (2013) — Thumb Zone Reachability (n=1,333)
+- Ward et al. (2017) — Smartphone Mere Presence Brain Drain
+- Al-Mushasha et al. (2021) — Screen Size & Cognitive Load (n=1,570)
 
 **Applied Frameworks**
 - BJ Fogg (2009) — Behavior Model (B = MAP)
 - Eyal (2014) — Hook Model
 - Balfour (Reforge) — Activation Framework
 - Pirolli & Card (1999) — Information Foraging Theory
+- Mayer (2009) — Multimedia Learning Principles
+- Tesler (1984) — Conservation of Complexity
 
 ## How to Use
 
 ### Evaluate an existing product or flow
-Walk through each layer top-to-bottom. For each layer, identify what's working and what violates the principle. End with prioritized recommendations.
+**If a URL is available**, browse the live product directly using an agent browser (if available). Observe the actual interface, interactions, and flow as a real user would — this gives you a far more accurate evaluation than screenshots or code alone. Then walk through each layer top-to-bottom.
+
+**If no browser is available**, use screenshots, descriptions, or code. Walk through each layer top-to-bottom. For each layer, identify what's working and what violates the principle. End with prioritized recommendations.
 
 ### Design a new feature or flow
 Walk through each layer bottom-up (Layer 5 → Layer 1) to ground design decisions in behavioral outcomes first, then work back to visual execution.
@@ -107,6 +137,7 @@ Found a missing paper? Have a UX insight backed by research? PRs welcome — esp
 - Real-world case studies applying specific principles
 - Cross-cultural considerations for any principle
 - Counter-examples where a principle doesn't hold
+- Mobile-specific behavioral research
 
 ## License
 
